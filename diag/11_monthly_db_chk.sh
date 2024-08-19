@@ -5,6 +5,7 @@ echo "# 1. Prepare directory"
 echo "##############################"
 mkdir -p /home/gpadmin/diag/diaglog
 mkdir -p /home/gpadmin/diag/csv
+mkdir -p /home/gpadmin/hc_chk
 
 echo "##############################"
 echo "# 2. Prepare hostfile"
