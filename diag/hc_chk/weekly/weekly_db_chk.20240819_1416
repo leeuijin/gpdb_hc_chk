@@ -1,0 +1,58 @@
+
+####################
+### 1. System Resource Usages Raw data to CSV file
+####################
+COPY 336
+
+####################
+### 2. System Resource Usages each 1 Minute to CSV file - Segment
+####################
+COPY 29
+
+####################
+### 3. System Resource Usages each 10 Minutes to CSV file - Segment
+####################
+COPY 4
+
+####################
+### 4. System Resource Usages each 1 Minute to CSV file - Master
+####################
+COPY 29
+
+####################
+### 5. System Resource Usages each 10 Minutes to CSV file - Master
+####################
+COPY 4
+
+####################
+### 6. System Resource Usages each 1 Hour to CSV file
+####################
+COPY 2
+
+####################
+### 7. Resource Group & User Mappings 
+####################
+       rolname       |    rsgname    
+---------------------+---------------
+ gpcc_operator_basic | default_group
+ gpcc_operator       | default_group
+ gpcc_basic          | default_group
+ gpadmin             | admin_group
+ gpmon               | admin_group
+(5 rows)
+
+
+####################
+### 8. Resource Group Usages Raw data to CSV file
+####################
+COPY 0
+
+####################
+### 9. Resource Group Usages each 1 Minute to CSV file
+####################
+COPY 0
+
+####################
+### 10. Resource Group Usages each 10 Minute to CSV file
+####################
+COPY 0
