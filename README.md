@@ -1,22 +1,18 @@
 # User Guide
 
-(1) download source using zip file (filename : gpdb6_assessment-main.zip)
+(1) download source using zip file 
 
 (2) upload zip file at /home/gpadmin directory in the master node
 
-(3) unzip uploaded file
+(3) change the directory name
 
-$ unzip gpdb6_assessment-main.zip
+$ tar -xvf xxx.tar
 
-(4) change the directory name
-
-$ mv gpdb6_assessment-main diag
-
-(5) run the diag shell script
+(4) run the diag shell script
 
 $ cd /home/gpadmin/diag
 
-$ sh 0_run_diag.sh
+$ sh 00_run_diag.sh
 
 -----------------------------------------------------------------
 
