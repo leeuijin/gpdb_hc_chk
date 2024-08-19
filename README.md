@@ -4,7 +4,7 @@
 
 (2) upload tar file at /home/gpadmin directory in the master node
 
-(3) change the directory name
+(3) Uncompress tar file
 
 $ tar -xvf hc_chk.tar
 
@@ -13,23 +13,31 @@ $ tar -xvf hc_chk.tar
 $ cd /home/gpadmin/diag
 
 $ sh 09_daily_db_hc_chk.sh
+
 $ sh 10_weekly_db_hc_chk.sh
+
 $ sh 11_monthly_db_chk.sh : 11_monthly_db_chk.sh File a is the same as 00_run_diag.sh file.
+
 $ 00_run_diag.sh file : GPDB 6.x assessment report generate shell script.
 
 -----------------------------------------------------------------
 # Summary
 
-How to 
+#How to 
+
 $ sh 09_daily_db_hc_chk.sh
+
 $ sh 10_weekly_db_hc_chk.sh
 
 #Review Report Results
+
 /home/gpadmin/diag/hc_chk/daily
+
 /home/gpadmin/diag/hc_chk/weekly
 
 
-#Daily Items
+# Daily Items
+
 1. Check resource usage by segment
 2. Full table list (except leaf partition table)
 3. Size by schema
@@ -43,18 +51,18 @@ $ sh 10_weekly_db_hc_chk.sh
 11. Table list that needs to be updated for statistics
 12. Check mirror segment status
 
-#Weekly items (last week, daily + weekly items performed)
+# Weekly items (last week, daily + weekly items performed)
+
 1. Check system resource usage (15 seconds, 1 minute, 10 minutes, 1 hour)
 2. Usage by Resource Group (last week, 1 minute, 10 minutes)
 
-#monthly
-1. OS Parameters (Master, Standby Master, All Segments)
-2. Check gpdb parameter setting value
-3. Check DB version and various component versions (required for critical bug checks)
-4. Check table blot (catalog/user table)
-5. Skew check
+# Monthly
 
-
+1. Check OS kernel Parameters (Master, Standby Master, All Segments)
+2. Check gpdb parameter setting value (Master, Standby Master, All Segments)
+3. Check DB version and component module versions (bug fixed checks)
+4. Check bloat table (catalog/user table)
+5. Skew check (user table)
 -----------------------------------------------------------------
 
 # Requirement
