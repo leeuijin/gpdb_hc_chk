@@ -29,7 +29,7 @@ $ sh 09_daily_db_hc_chk.sh
 
 $ sh 10_weekly_db_hc_chk.sh
 
-#Review Report Results
+# Report Results
 
 /home/gpadmin/diag/hc_chk/daily
 
@@ -39,17 +39,17 @@ $ sh 10_weekly_db_hc_chk.sh
 # Daily Items
 
 1. Check resource usage by segment
-2. Full table list (except leaf partition table)
+2. All table list (except leaf partition table)
 3. Size by schema
 4. Each table size
-5. Table list with frequent access
+5. Table list of frequent access
 6. Check error message (by frequency)
-7. partition table list
-8. Data file disk usage by segment
+7. Partitioned table list
+8. Disk usage by segment (data file directory)
 9. Check disk usage trends per hour
-10. SQL list performed for a long time in the last week
-11. Table list that needs to be updated for statistics
-12. Check mirror segment status
+10. SQL list for a long time in the last week
+11. Table list that needs to be updated for statistics (analyze)
+12. Check mirror segment status (replication)
 
 # Weekly items (last week, daily + weekly items included)
 
