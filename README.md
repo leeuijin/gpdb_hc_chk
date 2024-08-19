@@ -51,12 +51,12 @@ $ sh 10_weekly_db_hc_chk.sh
 11. Table list that needs to be updated for statistics
 12. Check mirror segment status
 
-# Weekly items (last week, daily + weekly items performed)
+# Weekly items (last week, daily + weekly items included)
 
 1. Check system resource usage (15 seconds, 1 minute, 10 minutes, 1 hour)
 2. Usage by Resource Group (last week, 1 minute, 10 minutes)
 
-# Monthly
+# Monthly (OS, DB parameters, version, bloat, skew, daily + weekly items included)
 
 1. Check OS kernel Parameters (Master, Standby Master, All Segments)
 2. Check gpdb parameter setting value (Master, Standby Master, All Segments)
