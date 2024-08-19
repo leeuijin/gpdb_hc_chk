@@ -29,7 +29,7 @@ $ sh 09_daily_db_hc_chk.sh
 
 $ sh 10_weekly_db_hc_chk.sh
 
-#Review Report Results
+# Report Results
 
 /home/gpadmin/diag/hc_chk/daily
 
